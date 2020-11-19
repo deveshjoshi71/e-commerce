@@ -12,29 +12,60 @@
 <body>
 
     
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="resources/images/logo.png" width="125px" alt="logo">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="resources/images/cart.png" width="30px" height="30px"></a>
+            <img src="resources/images/menu.png" class="menu-icon" onclick="menutoggle()" >
+        </div>
+    </div>
+    <!--ACCOUNT PAGE  -->
+
+    <div class="account-page">
         <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="resources/images/logo.png" width="125px" alt="logo">
+            <div class="row">
+                <div class="col-2">
+                    <img src="resources/images/image1.png" alt="">
                 </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="account.html">Account</a></li>
-                    </ul>
-                </nav>
-                <img src="resources/images/cart.png" width="30px" height="30px">
-                <img src="resources/images/menu.png" class="menu-icon" onclick="menutoggle()" >
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form action="" id="LoginForm">
+                            <input type="text" placeholder="UserName">
+                            <input type="password" placeholder="Password" name="" id="">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="#">Forgot password</a>
+                        </form>
+
+                        <form action="" id="RegForm">
+                            <input type="text" placeholder="UserName">
+                            <input type="email" name="" placeholder="Email" id="">
+                            <input type="password" placeholder="New Password" name="" id="">
+                            <input type="password" placeholder="Re-enter New Password" name="" id="">
+                            <button type="submit" class="btn">Register</button>
+                            
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </div>
-    
-    
-    <div class="small-container">
-
-     
     </div>
 
 
@@ -94,6 +125,30 @@
                     MenuItems.style.maxHeight = "0px"
                 }
         }
+
+    </script>
+
+    <!-- ----------js for Toggle FORm----- -->
+
+    <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+                        
+        }
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+                        
+        }
+
 
     </script>
 

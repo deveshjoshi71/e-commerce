@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>All Products-The Anytime Anywhere Store</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="resources/css/query.css">
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
 </head>
@@ -20,9 +20,9 @@
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Products</a></li>
+                        <li><a href="products.html">Products</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="">Contact</a></li>
                         <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
@@ -31,100 +31,82 @@
             </div>
         </div>
     
-    
-    <div class="small-container">
+    <!-- CART ITEMS DETAILS -->
 
-        <div class="row row-2">
-            <h2>All Products</h2>
-            <select>
-                <option>Default Sorting</option>
-                <option value="">Sort by price</option>
-                <option value="">Sort by popularity</option>
-                <option value="">Sort by rating</option>
-            </select>
-        </div>
-        
+    <div class="small-container cart-page">
+        <table>
+            <thead>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="resources/images/buy-1.jpg" alt="">
+                            <div>
+                                <p>Red Printed T-Shirt</p>
+                                <small>Price: 1000&#x20B9;</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" name="" id=""></td>
+                    <td>1000&#x20B9;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="resources/images/buy-2.jpg" alt="">
+                            <div>
+                                <p>Black Men Shoe</p>
+                                <small>Price: 1250&#x20B9;</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" name="" id=""></td>
+                    <td>1250&#x20B9;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="resources/images/buy-3.jpg" alt="">
+                            <div>
+                                <p>Grey Jogger</p>
+                                <small>Price: 850&#x20B9;</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" name="" id=""></td>
+                    <td>850&#x20B9;</td>
+                </tr>
+            </tbody>
+        </table>
 
-
-        <div class="row">
-            <div class="col-4">
-                <a href="single-product.html"><img src="resources/images/product-1.jpg" alt=""></a>
-                <h4>Red Printed T-shirt</h4>
-                <p>1000&#x20B9;</p>
-            </div>
-            <div class="col-4">
-                <img src="resources/images/product-2.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>1250&#x20B9;</p>
-            </div>
-            <div class="col-4">
-                <img src="resources/images/product-3.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>850&#x20B9;</p>
-            </div>
-            <div class="col-4">
-                <img src="resources/images/product-4.jpg" alt="">
-                <h4>Navy-Blue Printed T-shirt</h4>
-                <p>1050&#x20B9;</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-4">
-                <img src="resources/images/product-5.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>2000&#x20B9;</p>
-            </div>
-            <div class="col-4">
-                <img src="resources/images/product-6.jpg" alt="">
-                <h4>Black Printed T-shirt</h4>
-                <p>1250&#x20B9;</p>
-            </div>
-            <div class="col-4">
-                <img src="resources/images/product-7.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>450&#x20B9;</p>
-            </div>
-            <div class="col-4">
-                <img src="resources/images/product-8.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>1500&#x20B9;</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="resources/images/product-9.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>1800&#x20B9;</p>
-            </div>
-            <div class="col-4">
-                <img src="resources/images/product-10.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>2200&#x20B9;</p>
-            </div>
-            <div class="col-4">
-                <img src="resources/images/product-11.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>1500&#x20B9;</p>
-            </div>
-            <div class="col-4">
-                <img src="resources/images/product-12.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>1000&#x20B9;</p>
-            </div>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>3100&#x20B9;</td>
+                </tr>
+                <tr>
+                    <td>Tax <span>(18%)</span></td>
+                    <td>558&#x20B9;</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>3658&#x20B9;</td>
+                </tr>
+            </table>
         </div>
 
-        <div class="page-btn">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>&#8594;</span>
-        </div>
-
-        
     </div>
-
 
     <!-- FOOTER -->
     <div class="footer">
